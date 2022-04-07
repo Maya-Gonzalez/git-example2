@@ -11,9 +11,9 @@ So you just finished yout coding project and now we would like to show off your 
 
 Let’s start in the terminal. You can seach ‘terminal’ on a Mac or ‘cmd’ on a Windows computer. Once in the terminal, we want to navigate to a location where we can work out of. For the sake of simplicity, let’s work out of a special folder on our Desktop.
 
-To change the directory, type the following command
-```> cd desktop```
-```> ls```
+To change the directory, type the following commands\
+```> cd desktop```\
+```> ls```\
 
 The ls command lists files within this Desktop directory. Create a new folder for this project while in the Desktop directory.
 ```> mkdir git-tutorial```
