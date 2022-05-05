@@ -67,7 +67,7 @@ We’ll see what branch we’re currently on and any new changes that have been 
 
 ![git status](https://static.javatpoint.com/tutorial/git/images/git-status2.png)
 ### Pushing Changes
-Once changes are committed they are reflected to the local repository, but  do not yet update to the remote repository. For our changes to be seen by others through a platform such as GitHub, we need t$
+Once changes are committed they are reflected to the local repository, but  do not yet update to the remote repository. For our changes to be seen by others through a platform such as GitHub, we need to 'push' our changes.
 `> git push`
 
 ### Commiting Changes
