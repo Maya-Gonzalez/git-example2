@@ -47,6 +47,7 @@ Creating a new branch essentially creates a reference to the current state of th
 
 The command simply created a new branch, but we are still on the master branch. It is useful to know what branch you are currently on, luckily git keeps track of this information through a special pointer known as HEAD. We can check what branch we are on through the git log command\
 `> git log`
+
 ![Head Pointer](https://static.javatpoint.com/tutorial/git/images/git-log-4.png)
 ### Switching Branches
 In order to change the branch we are currently on, we need to execute the following command. Likewise, this will change where the HEAD pointer is pointing to, from the master branch to our new branch development\
@@ -63,10 +64,11 @@ Adding a new file moves the file from our working tree into the staging area. Th
 `> git status`
 
 We’ll see what branch we’re currently on and any new changes that have been made. The output mentions ‘changes to be committed’, which nicely segways us to a major topic in git, the commit.
+
 ![git status](https://static.javatpoint.com/tutorial/git/images/git-status2.png)
 ### Pushing Changes
 Once changes are committed they are reflected to the local repository, but  do not yet update to the remote repository. For our changes to be seen by others through a platform such as GitHub, we need t$
-`> git push
+`> git push`
 
 ### Commiting Changes
 Commiting changes essentially is moving any changes made in our working directory into the staging area. It is common practice to add a message to your commit, so that you and others can be reminded of what each commit signified.\
@@ -74,11 +76,12 @@ Commiting changes essentially is moving any changes made in our working director
 
 Any changes we make to this branch will not be reflected on the master branch unless we make a deliberate action to do so. This is why utilizing branches in any project is super useful! Since branches can have differences, it may be useful to distinguish the differences between two branches. This can be accomplished with the following command.\
 `> git diff <branch-name> <other-branch-name>`
+
 ![git diff](https://static.javatpoint.com/tutorial/git/images/git-diff.png)\
 
 ## Pulling Changes
 We know how to make our changes reflect to our remote repository. Say your friend wants to contribute to this project on their own computer, they should have a way to get the most updated version of the project on their computer. The best way to do this is through a ‘pull request’, which takes the latest version of the project and puts it onto your workspace. If you want to pull content from the origin repository and the master branch, then the following command will do just that! 
-`> git pull origin master
+`> git pull origin master`
 
 ## Stashing
 Now, say you made some edits but don't necessarily want to commit those changes quite yet. Git allows us to 'stash' changes, which means that we are able to save uncommitted changes locally. This action allows us to make other changes, checkout other branches, and perform any other git operations. It is almost like we are putting current changes on a temporary shelf to come back for later. This is especially useful when switching between contexts.\
@@ -88,6 +91,7 @@ Once these changes are stashed, we can move freely to other branches and start w
 `> git stash list`
 
 Stashes are ordered and numbered in a last-in-first-out approach. The naming convention includes WIP and then the branch and commit the stash was created from.\
+
 ![git stash](https://static.javatpoint.com/tutorial/git/images/git-stash14.png)\
 We then will want to follow the same processes mentioned above to add our files to the staging area, then commit then to the local repo. 
 
